@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react'
 import styles from './styles.module.css'
 import './assets/base.scss'
@@ -11,8 +10,8 @@ export const ExampleComponent = ({ text }) => {
 
 export const LabelAndValue = ({ label, value, className }) => {
   return (
-    <div className={className || styles.mt2} style={{ color: gui.mainColor }}>
-      <span className={styles.fontBold}>{`${label}`}</span>
+    <div className={className || 'mt-2'} style={{ color: gui.mainColor }}>
+      <span className='font-b'>{`${label}`}</span>
       <span>{value ? `: ${value}` : ''}</span>
     </div>
   )
@@ -31,8 +30,8 @@ export const TextField = ({
   min
 }) => {
   return (
-    <div className={className || styles.mb3}>
-      <div className={type === 'textarea' ? styles.textarea : styles.fieldInput}>
+    <div className={className || 'mb-3'}>
+      <div className={type === 'textarea' ? 'textarea' : 'fieldInput'}>
         <Input
           name={name}
           min={min || ''}
@@ -40,14 +39,14 @@ export const TextField = ({
           innerRef={innerRef}
           type={type || 'text'}
           className={
-            type === 'textarea' ? styles.fieldInputStyle2 : styles.fieldInputStyl
+            type === 'textarea' ? 'fieldInputStyle2' : 'fieldInputStyle'
           }
           defaultValue={defaultValue || ''}
           placeholder={`${label} . . . `}
           onChange={onChange}
-          rows={type === styles.textarea ? 3 : 1}
+          rows={type === 'textarea' ? 3 : 1}
         />
-        <Label className={styles.labelStyle}>{label}</Label>
+        <Label className='labelStyle'>{label}</Label>
       </div>
 
       {showError && showError(label, name)}
