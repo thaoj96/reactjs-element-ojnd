@@ -1,10 +1,13 @@
 {
   "name": "reactjs-element-ojnd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": ":))",
   "author": "",
   "license": "MIT",
-  "repository": "/reactjs-element-ojnd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaoj96/reactjs-element-ojnd.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
