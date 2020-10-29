@@ -1,6 +1,6 @@
 {
   "name": "reactjs-element-ojnd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": ":))",
   "author": "",
   "license": "MIT",
@@ -46,12 +46,16 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "reactstrap": "^8.6.0",
+    "node-sass": "4.10.0",
+    "sass-loader": "6.0.6",
     "react-scripts": "^3.4.1"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "reactstrap": "^8.6.0"
+    "reactstrap": "^8.6.0",
+    "sass": "1.3.0",
+    "node-sass": "4.13.0"
   }
 }
