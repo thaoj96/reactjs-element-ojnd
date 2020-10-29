@@ -1,0 +1,136 @@
+.fieldInput {
+   display: flex;
+   flex-flow: column;
+   border-radius: 10px;
+   height: 44px;
+ }
+ .labelStyle {
+   transition: all 0.2s;
+   touch-action: manipulation;
+   width: auto;
+   position: absolute;
+   font-size: 13px;
+   border-radius: 4px;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+ .fieldInputStyle {
+   transition: all 0.2s;
+   touch-action: manipulation;
+   font-size: 15px;
+   border: 0.5px solid #f6f6f7;
+   -webkit-appearance: none;
+   border-radius: 10px;
+   padding-left: 8px;
+   padding-right: 8px;
+   cursor: text;
+   height: 44px;
+   background-color: #f6f6f7;
+   &:focus {
+     outline: 0;
+     background-color: #fff;
+     border: 0.5px solid #2a5298;
+     + {
+       .labelStyle {
+         transform: translate(16px, -11px) scale(1);
+         cursor: pointer;
+         background-color: #fff;
+         padding-left: 5px;
+         padding-right: 5px;
+         border-radius: 4px;
+         color: #2a5298;
+         opacity: 1;
+         width: auto;
+         border-bottom: 1px solid #2a5298;
+         // background-color: greenyellow;
+       }
+     }
+   }
+   &:placeholder-shown {
+     + {
+       label {
+         cursor: text;
+         width: 0px;
+         white-space: nowrap;
+         overflow: hidden;
+         padding: 0px;
+         text-overflow: ellipsis;
+         transform-origin: left bottom;
+         transform: translate(0, 12px) scale(1);
+         opacity: 0.7;
+       }
+     }
+   }
+   &:not(:placeholder-shown) {
+     + {
+       label {
+         background-color: #fff;
+         border-bottom: 1px solid #333;
+         transform-origin: left bottom;
+         transform: translate(16px, -11px) scale(1);
+         cursor: pointer;
+       }
+     }
+   }
+ }
+ .fieldInputStyle2 {
+   transition: all 0.2s;
+   touch-action: manipulation;
+   font-size: 15px;
+   border: 0.5px solid #f6f6f7;
+   -webkit-appearance: none;
+   padding-top: 9px;
+   border-radius: 10px;
+   padding-left: 8px;
+   padding-right: 8px;
+   cursor: text;
+   height: 100px;
+   background-color: #f6f6f7;
+   &:focus {
+     outline: 0;
+     background-color: #fff;
+     border: 0.5px solid #2a5298;
+     + {
+       .labelStyle {
+         transform: translate(16px, -11px) scale(1);
+         cursor: pointer;
+         background-color: #fff;
+         padding-left: 5px;
+         padding-right: 5px;
+         border-radius: 4px;
+         color: #2a5298;
+         opacity: 1;
+         width: auto;
+         border-bottom: 1px solid #2a5298;
+         // background-color: greenyellow;
+       }
+     }
+   }
+   &:placeholder-shown {
+     + {
+       label {
+         cursor: text;
+         width: 0px;
+         white-space: nowrap;
+         overflow: hidden;
+         padding: 0px;
+         text-overflow: ellipsis;
+         transform-origin: left bottom;
+         transform: translate(0, 12px) scale(1);
+         opacity: 0.7;
+       }
+     }
+   }
+   &:not(:placeholder-shown) {
+     + {
+       label {
+         background-color: #fff;
+         border-bottom: 1px solid #333;
+         transform-origin: left bottom;
+         transform: translate(16px, -11px) scale(1);
+         cursor: pointer;
+       }
+     }
+   }
+ }
+ 
